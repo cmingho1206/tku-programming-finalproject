@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+}
+
+.container {
+  width: min(900px, 95vw);
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.controls label {
+  background: #ffffff;
+  border: 1px solid #d6dbe3;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+}
+
+input {
+  width: 4rem;
+}
+
+button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 8px;
+  background: #2463eb;
+  color: white;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  gap: 2px;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.cell {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #a8b0bd;
+  background: #d5dde8;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.revealed {
+  background: #ffffff;
+}
+
+.cell.mine {
+  background: #ff8282;
+}
+
+.hint {
+  color: #4f5666;
+}

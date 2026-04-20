@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>踩地雷 (Flask + C)</h1>
+      <section class="controls">
+        <label>列數 <input id="rows" type="number" min="2" max="30" value="9" /></label>
+        <label>行數 <input id="cols" type="number" min="2" max="30" value="9" /></label>
+        <label>地雷 <input id="mines" type="number" min="1" max="200" value="10" /></label>
+        <button id="new-game">新遊戲</button>
+      </section>
+      <p id="status">準備開始</p>
+      <section id="board" class="board"></section>
+      <p class="hint">左鍵開格、右鍵插旗</p>
+    </main>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+  </html>

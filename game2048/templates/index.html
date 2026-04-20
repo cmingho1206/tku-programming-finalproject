@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2048 Flask + C</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>2048 (Flask + C)</h1>
+      <div class="topbar">
+        <div id="score">Score: 0</div>
+        <button id="new-game">新遊戲</button>
+      </div>
+      <p id="status">使用方向鍵或按鈕操作</p>
+      <section id="board" class="board"></section>
+      <div class="actions">
+        <button data-dir="0">上</button>
+        <button data-dir="2">左</button>
+        <button data-dir="1">下</button>
+        <button data-dir="3">右</button>
+      </div>
+    </main>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+  </html>
